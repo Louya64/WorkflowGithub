@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Worlflow Github</title>
+	</head>
+	<body>
+    <h1>Workflow Github</h1>
+    <p>un petit récap du workflow github pour projet en équipe. N'hésitez pas à me dire si il faut modifier, si il manque des trucs etc ...
+(je suis pas du tout experte en la matière)</p>
+      <ol>
+        <li>on crée le repo sur github (pour avoir une adresse <remote> qui ressemble à ça: git@github.com:Louya64/The-Wild-restau.git ou ça: https://github.com/Louya64/The-Wild-restau.git) //vérif que c'est ok pour les 2 avec Lydie ou Joseph ?
+        </li>
+        <li>2 - sur github on crée une branch "dev" (ou autre nom ? voir Lydie ou Joseph) en ouvrant l'onglet main (cf photo 1)
+        </li>
+        <li>3 - on invite ses potes en collaborateurs (sur le repo github -> settings -> manage access)
+        </li>
+        <li>4-a ( 1ère façon - on n'a pas encore de dossier) - en local, on clone le repo (on se place dans le dossier parent) (<remote> c'est l'adresse du remote ^^):```git clone <remote>``` puis on se déplace dans le dossier: ```cd nomDuDossier``` puis :```git init```
+        </li>
+        <li>4-b ( 2ème façon - on a déjà un dossier) - en local,  on va dans son dossier: ```cd nomDossier``` puis: ```git init``` ```git remote add origin <remote>``` (le mot "origin" est une convention, on pourrait remplacer par "patate" - c'est un peu la variable qui contient l'adresse github du repo)
+        </li>
+        <li>5 - pour voir le nom de la branch sur laquelle on est:```git branch```  puis on se déplace sur dev: ```git checkout dev``` puis, pour être sûr d'être à jour par rapport à dev:```git pull <remote>``` // pas sure que ce soit <remote>? on peut pull nomBranch? on peut pull tout court ?
+        </li>
+        <li>6 - on crée sa branch genre "header" ou "contactPage" // majuscules ok?
+          ou "listenerBtnSubmit" ou "fixBugResponsive" etc selon ce qu'on va faire:```git branch fixBugResponsive``` puis on se déplace dessus:```git checkout fixBugResponsive```</li>
+        <li>7 - on bosse dur sur son vscode
+        </li>
+        <li>8 - une fois fini le morceau sur lequel on travaille: 
+          git add .
+           ou 
+          git add leFichierNana leFichierTruc
+           //faut des espaces entre les fichiers?</li>
+        <li>9 - 
+          git commit -m "message genre add header ou fix bug responsive..."
+          </li>
+        <li>10 - ! Attention pushez sur votre branch, pas sur dev ni main 
+          git push origin fixBugResponsive
+           ("origin" ou nomDuRemote / "fixBugResponsive" ou nomDeVOTREbranch)</li>
+        <li>
+          11 - sur github, on fait une pull request de nomDeVOTREbranch vers dev (cf photo 2)</li>
+          <li>12 - on résout les conflits si y'en a puis on merge sur dev (désolée c'est flou ici pour moi donc pas très détaillé - bonne chance pour les conflits !!)</li>
+      </ol>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
