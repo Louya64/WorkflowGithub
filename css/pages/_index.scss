@@ -1,0 +1,15 @@
+.intro {
+	padding: 3vh 8vw;
+}
+.list {
+	&__item {
+		margin: 2vh 0;
+		list-style-type: decimal-leading-zero;
+		&--newStep {
+			margin-top: 4vw;
+		}
+		.flex__child {
+			width: 47%;
+		}
+	}
+}

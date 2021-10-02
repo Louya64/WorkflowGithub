@@ -4,53 +4,136 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/630b38ac33.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Monoton&family=Ubuntu:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
 		<title>Worlflow Github</title>
 	</head>
 	<body>
-    <h1>Workflow Github</h1>
-    <p>un petit récap du workflow github pour projet en équipe. N'hésitez pas à me dire si il faut modifier, si il manque des trucs etc ...
-(je suis pas du tout experte en la matière)</p>
-      <ol>
-        <li>on crée le repo sur github (pour avoir une adresse <remote> qui ressemble à ça: git@github.com:Louya64/The-Wild-restau.git ou ça: https://github.com/Louya64/The-Wild-restau.git) //vérif que c'est ok pour les 2 avec Lydie ou Joseph ?
-        </li>
-        <li>2 - sur github on crée une branch "dev" (ou autre nom ? voir Lydie ou Joseph) en ouvrant l'onglet main (cf photo 1)
-        </li>
-        <li>3 - on invite ses potes en collaborateurs (sur le repo github -> settings -> manage access)
-        </li>
-        <li>4-a ( 1ère façon - on n'a pas encore de dossier) - en local, on clone le repo (on se place dans le dossier parent) (<remote> c'est l'adresse du remote ^^):```git clone <remote>``` puis on se déplace dans le dossier: ```cd nomDuDossier``` puis :```git init```
-        </li>
-        <li>4-b ( 2ème façon - on a déjà un dossier) - en local,  on va dans son dossier: ```cd nomDossier``` puis: ```git init``` ```git remote add origin <remote>``` (le mot "origin" est une convention, on pourrait remplacer par "patate" - c'est un peu la variable qui contient l'adresse github du repo)
-        </li>
-        <li>5 - pour voir le nom de la branch sur laquelle on est:```git branch```  puis on se déplace sur dev: ```git checkout dev``` puis, pour être sûr d'être à jour par rapport à dev:```git pull <remote>``` // pas sure que ce soit <remote>? on peut pull nomBranch? on peut pull tout court ?
-        </li>
-        <li>6 - on crée sa branch genre "header" ou "contactPage" // majuscules ok?
-          ou "listenerBtnSubmit" ou "fixBugResponsive" etc selon ce qu'on va faire:```git branch fixBugResponsive``` puis on se déplace dessus:```git checkout fixBugResponsive```</li>
-        <li>7 - on bosse dur sur son vscode
-        </li>
-        <li>8 - une fois fini le morceau sur lequel on travaille: 
-          git add .
-           ou 
-          git add leFichierNana leFichierTruc
-           //faut des espaces entre les fichiers?</li>
-        <li>9 - 
-          git commit -m "message genre add header ou fix bug responsive..."
-          </li>
-        <li>10 - ! Attention pushez sur votre branch, pas sur dev ni main 
-          git push origin fixBugResponsive
-           ("origin" ou nomDuRemote / "fixBugResponsive" ou nomDeVOTREbranch)</li>
-        <li>
-          11 - sur github, on fait une pull request de nomDeVOTREbranch vers dev (cf photo 2)</li>
-          <li>12 - on résout les conflits si y'en a puis on merge sur dev (désolée c'est flou ici pour moi donc pas très détaillé - bonne chance pour les conflits !!)</li>
-      </ol>
-
-
-
-
-
-
-
-
-
-  </body>
+		<h1>Workflow Github</h1>
+		<main class="workflowGithub">
+			<p class="intro">
+				un petit récap du workflow github pour projet en équipe. N'hésitez pas à
+				me dire si il faut modifier, si il manque des trucs etc ...<br />(je
+				suis pas du tout experte en la matière)<br />
+				* <i class="fas fa-chevron-left"></i>remote<i
+					class="fas fa-chevron-right"
+				></i>
+				= par ex git@github.com:Louya64/WorkflowGithub.git <br />*
+				<span class="bash">En vert, ce qu'on tape dans le terminal</span>
+			</p>
+			<ol class="list">
+				<li class="list__item">
+					sur github, on crée le repo pour avoir une adresse
+					<i class="fas fa-chevron-left"></i>remote<i
+						class="fas fa-chevron-right"
+					></i>
+					qui ressemble à ça: git@github.com:Louya64/WorkflowGithub.git ou ça:
+					https://github.com/Louya64/WorkflowGithub.git
+					<span class="comment"></span>
+						(vérif que c'est ok pour les 2 avec Lydie ou Joseph)</span
+					>
+				</li>
+				<li class="list__item">
+					sur github on crée une branch "dev"
+					<span class="comment">(ou autre nom ? voir Lydie ou Joseph)</span> en
+					ouvrant l'onglet main
+					<a href="assets/branchDev.png" target="_blanck"> voir la photo</a>
+				</li>
+				<li class="list__item">
+					sur github, on invite ses potes en collaborateurs (sur le repo
+					concerné <i class="fas fa-long-arrow-alt-right"></i> settings
+					<i class="fas fa-long-arrow-alt-right"></i> manage access)
+				</li>
+				<li class="list__item list__item--newStep">
+					<div class="flex just-between">
+						<p class="flex__child">
+							<span class="underline">si on n'a pas encore de dossier</span>: en
+							local, on se place dans le dossier parent et on clone le repo :
+							<span class="bash">
+								git clone <i class="fas fa-chevron-left"></i>remote<i
+									class="fas fa-chevron-right"
+								></i
+							></span>
+							puis on se déplace dans le dossier :
+							<span class="bash"> cd nomDuDossier </span>puis :<span
+								class="bash"
+							>
+								git init
+							</span>
+						</p>
+						<p class="flex__child">
+							<span class="underline">si on a déjà un dossier</span>: en local,
+							on va dans son dossier :
+							<span class="bash"> cd cheminDuDossier </span> puis :
+							<span class="bash"> git init </span> puis
+							<span class="bash">
+								git remote add origin
+								<i class="fas fa-chevron-left"></i>remote<i
+									class="fas fa-chevron-right"
+								></i></span
+							><br />(le mot "origin" est une convention, on pourrait remplacer
+							par "patate" - c'est un peu la variable qui contient l'adresse
+							github du repo)
+						</p>
+					</div>
+				</li>
+				<li class="list__item">
+					on se déplace sur la branch dev :
+					<span class="bash"> git checkout dev </span> on peut vérifier le nom
+					de la branch sur laquelle on est :
+					<span class="bash"> git branch </span> puis, pour être sûr d'être à
+					jour par rapport à dev :
+					<span class="bash">
+						git pull <i class="fas fa-chevron-left"></i>remote<i
+							class="fas fa-chevron-right"
+						></i></span
+					><span class="comment">
+						(pas sure que ce soit <i class="fas fa-chevron-left"></i>remote<i
+							class="fas fa-chevron-right"
+						></i>
+						on peut pull nomBranch? on peut "git pull" tout court ?)</span
+					>
+				</li>
+				<li class="list__item">
+					on crée sa branch genre "header" ou "fixBugResponsive" etc selon ce qu'on va faire : <span class="bash"> git branch fixBugResponsive </span> puis on se
+					déplace dessus : <span class="bash"> git checkout fixBugResponsive </span>
+				</li>
+				<li class="list__item list__item--newStep">on bosse dur sur son vscode</li>
+				<li class="list__item list__item--newStep">
+					une fois fini le morceau sur lequel on travaille : 
+					<span class="bash"> git add . </span> ou
+					<span class="bash"> git add leFichierNana leFichierTruc </span><span class="comment"> (faut
+					des espaces entre les fichiers?)</span>
+				</li>
+				<li class="list__item">
+					puis <span class="bash"
+						> git commit -m "message genre <i class="fas fa-long-arrow-alt-right"></i> fix bug
+						responsive in pageContact..."</span
+					>
+				</li>
+				<li class="list__item">
+					<span class="larger">! Attention</span> pushez sur VOTRE branch (pas sur dev ni main) : 
+					<span class="bash"> git push origin fixBugResponsive </span>
+				</li>
+				<li class="list__item list__item--newStep">
+					sur github, on fait une pull request de nomDeVOTREbranch vers dev <a href="assets/pullRequest.png" target="_blank">voir la photo</a>
+				</li>
+				<li class="list__item">
+					on résout les conflits si y'en a puis on merge sur dev (désolée c'est
+					flou ici pour moi donc pas très détaillé - bonne chance pour les
+					conflits !!)
+				</li>
+			</ol>
+		</main>
+		<footer style="height: 20vh"></footer>
+	</body>
 </html>

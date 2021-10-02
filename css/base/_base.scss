@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: $colorMain;
+	background-color: $colorSecond;
+}
+a {
+	color: $colorLinks;
+	text-decoration: none;
+	font-size: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 4vw;
+	font-family: $fontSpecial;
+	text-align: center;
+	color: $colorSecond;
+	background-color: $colorMain;
+	width: fit-content;
+	padding: 1.2vw 2vw;
+	border-radius: 10px;
+	margin: 5vh auto;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $fontTitles;
+}
+
+main {
+	width: 70%;
+	margin: auto;
+	font-size: 1vw;
+}
+
+.flex {
+	display: flex;
+	&.just-between {
+		justify-content: space-between;
+	}
+	&.just-around {
+		justify-content: space-around;
+	}
+	&.just-evenly {
+		justify-content: space-evenly;
+	}
+	&.just-center {
+		justify-content: center;
+	}
+	&.align-center {
+		align-items: center;
+	}
+	&.align-end {
+		align-items: flex-end;
+	}
+	&.column {
+		flex-direction: column;
+	}
+}
+
+.underline {
+	text-decoration: underline;
+	font-size: larger;
+}
+
+.smaller {
+	font-size: smaller;
+}
+.larger {
+	font-size: larger;
+}
+
+.fas,
+.far {
+	color: inherit;
+}
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+	font-size: smaller;
+	transform: translateY(2px);
+}
+
+.bash {
+	color: $colorBash;
+	font-weight: bold;
+}
+
+.comment {
+	color: $colorComments;
+}

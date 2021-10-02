@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #eeeeee;
+  background-color: #1b1b1b;
+}
+
+a {
+  color: #ad64f1;
+  text-decoration: none;
+  font-size: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 4vw;
+  font-family: "Monoton", cursive;
+  text-align: center;
+  color: #1b1b1b;
+  background-color: #eeeeee;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.2vw 2vw;
+  border-radius: 10px;
+  margin: 5vh auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+  font-size: 1vw;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.just-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex.just-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex.just-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex.just-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.underline {
+  text-decoration: underline;
+  font-size: larger;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.fas,
+.far {
+  color: inherit;
+}
+
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+  font-size: smaller;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.bash {
+  color: #54bb4b;
+  font-weight: bold;
+}
+
+.comment {
+  color: rgba(238, 238, 238, 0.3);
+}
+
+.intro {
+  padding: 3vh 8vw;
+}
+
+.list__item {
+  margin: 2vh 0;
+  list-style-type: decimal-leading-zero;
+}
+
+.list__item--newStep {
+  margin-top: 4vw;
+}
+
+.list__item .flex__child {
+  width: 47%;
+}
+/*# sourceMappingURL=styles.css.map */
