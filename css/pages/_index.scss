@@ -1,12 +1,15 @@
 .intro {
-	padding: 3vh 8vw;
+	width: fit-content;
+	margin: auto;
+	padding: 3vh;
 }
 .list {
 	&__item {
-		margin: 2vh 0;
+		padding: 2vh 5vw;
+		margin: 0 5vw;
 		list-style-type: decimal-leading-zero;
-		&--newStep {
-			margin-top: 4vw;
+		&--light {
+			background-color: lighten($colorSecond, 10);
 		}
 		.flex__child {
 			width: 47%;

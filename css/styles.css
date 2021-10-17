@@ -9,6 +9,7 @@ a {
   color: #ad64f1;
   text-decoration: none;
   font-size: bold;
+  background-color: inherit;
 }
 
 a:hover {
@@ -38,7 +39,6 @@ h6 {
 }
 
 main {
-  width: 70%;
   margin: auto;
   font-size: 1vw;
 }
@@ -119,23 +119,30 @@ main {
 .bash {
   color: #54bb4b;
   font-weight: bold;
+  background-color: inherit;
 }
 
 .comment {
   color: rgba(238, 238, 238, 0.3);
+  background-color: inherit;
 }
 
 .intro {
-  padding: 3vh 8vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 3vh;
 }
 
 .list__item {
-  margin: 2vh 0;
+  padding: 2vh 5vw;
+  margin: 0 5vw;
   list-style-type: decimal-leading-zero;
 }
 
-.list__item--newStep {
-  margin-top: 4vw;
+.list__item--light {
+  background-color: #353535;
 }
 
 .list__item .flex__child {
