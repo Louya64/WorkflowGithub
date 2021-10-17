@@ -21,9 +21,7 @@
 		<h1>Workflow Github</h1>
 		<main class="workflowGithub">
 			<p class="intro">
-				un petit récap du workflow github pour projet en équipe. N'hésitez pas à
-				me dire si il faut modifier, si il manque des trucs etc ...<br />(je
-				suis pas du tout experte en la matière)<br />
+				un petit récap du workflow github pour projet en équipe.<br />
 				* <i class="fas fa-chevron-left"></i>remote<i
 					class="fas fa-chevron-right"
 				></i>
@@ -31,29 +29,36 @@
 				<span class="bash">En vert, ce qu'on tape dans le terminal</span>
 			</p>
 			<ol class="list">
-				<li class="list__item">
+				<li class="list__item list__item--light">
 					sur github, on crée le repo pour avoir une adresse
 					<i class="fas fa-chevron-left"></i>remote<i
 						class="fas fa-chevron-right"
 					></i>
 					qui ressemble à ça: git@github.com:Louya64/WorkflowGithub.git ou ça:
 					https://github.com/Louya64/WorkflowGithub.git
-					<span class="comment"></span>
-						(vérif que c'est ok pour les 2 avec Lydie ou Joseph)</span
-					>
 				</li>
 				<li class="list__item">
-					sur github on crée une branch "dev"
-					<span class="comment">(ou autre nom ? voir Lydie ou Joseph)</span> en
-					ouvrant l'onglet main
+					sur github on crée une branch "dev" en ouvrant l'onglet main
 					<a href="assets/branchDev.png" target="_blanck"> voir la photo</a>
 				</li>
-				<li class="list__item">
+				<li class="list__item list__item--light">
 					sur github, on invite ses potes en collaborateurs (sur le repo
-					concerné <i class="fas fa-long-arrow-alt-right"></i> settings
-					<i class="fas fa-long-arrow-alt-right"></i> manage access)
+					concerné <i class="fas fa-long-arrow-alt-right"></i> settings (<a
+						href="assets/settings.png"
+						target="_blanck"
+						>photo</a
+					>) <i class="fas fa-long-arrow-alt-right"></i> manage access(<a
+						href="assets/manageAccess.png"
+						target="_blanck"
+						>photo1</a
+					>, <a href="assets/addPeople.png" target="_blanck">photo2</a>))<br />
 				</li>
 				<li class="list__item list__item--newStep">
+					<img
+						style="margin: auto; width: 100%"
+						src="assets/arrowss.png"
+						alt=""
+					/>
 					<div class="flex just-between">
 						<p class="flex__child">
 							<span class="underline">si on n'a pas encore de dossier</span>: en
@@ -82,46 +87,43 @@
 						</p>
 					</div>
 				</li>
-				<li class="list__item">
+				<li class="list__item list__item--light">
 					on se déplace sur la branch dev :
-					<span class="bash"> git checkout dev </span> on peut vérifier le nom
+					<span class="bash"> git checkout dev </span> (on peut vérifier le nom
 					de la branch sur laquelle on est :
-					<span class="bash"> git branch </span> puis, pour être sûr d'être à
-					jour par rapport à dev :
-					<span class="bash">
-						git pull <i class="fas fa-chevron-left"></i>remote<i
-							class="fas fa-chevron-right"
-						></i></span
-					><span class="comment">
-						(pas sure que ce soit <i class="fas fa-chevron-left"></i>remote<i
-							class="fas fa-chevron-right"
-						></i>
-						on peut pull nomBranch? on peut "git pull" tout court ?)</span
-					>
+					<span class="bash"> git branch </span>)
 				</li>
 				<li class="list__item">
-					on crée sa branch genre "header" ou "fixBugResponsive" etc selon ce qu'on va faire : <span class="bash"> git branch fixBugResponsive </span> puis on se
-					déplace dessus : <span class="bash"> git checkout fixBugResponsive </span>
+					on crée sa branch genre "header" ou "fixBugResponsive" etc selon ce
+					qu'on va faire :
+					<span class="bash"> git branch fixBugResponsive </span> puis on se
+					déplace dessus :
+					<span class="bash"> git checkout fixBugResponsive </span>
 				</li>
-				<li class="list__item list__item--newStep">on bosse dur sur son vscode</li>
+				<li class="list__item list__item--newStep list__item--light">
+					on bosse dur sur son vscode
+				</li>
 				<li class="list__item list__item--newStep">
-					une fois fini le morceau sur lequel on travaille : 
+					une fois fini le morceau sur lequel on travaille :
 					<span class="bash"> git add . </span> ou
-					<span class="bash"> git add leFichierNana leFichierTruc </span><span class="comment"> (faut
-					des espaces entre les fichiers?)</span>
+					<span class="bash"> git add leFichierNana leFichierTruc </span>
 				</li>
-				<li class="list__item">
-					puis <span class="bash"
-						> git commit -m "message genre <i class="fas fa-long-arrow-alt-right"></i> fix bug
-						responsive in pageContact..."</span
+				<li class="list__item list__item--light">
+					puis
+					<span class="bash">
+						git commit -m "message genre
+						<i class="fas fa-long-arrow-alt-right"></i> fix bug responsive in
+						pageContact..."</span
 					>
 				</li>
 				<li class="list__item">
-					<span class="larger">! Attention</span> pushez sur VOTRE branch (pas sur dev ni main) : 
+					<span class="larger">! Attention</span> pushez sur VOTRE branch (pas
+					sur dev ni main) :
 					<span class="bash"> git push origin fixBugResponsive </span>
 				</li>
-				<li class="list__item list__item--newStep">
-					sur github, on fait une pull request de nomDeVOTREbranch vers dev <a href="assets/pullRequest.png" target="_blank">voir la photo</a>
+				<li class="list__item list__item--newStep list__item--light">
+					sur github, on fait une pull request de nomDeVOTREbranch vers dev
+					<a href="assets/pullRequest.png" target="_blank">voir la photo</a>
 				</li>
 				<li class="list__item">
 					on résout les conflits si y'en a puis on merge sur dev (désolée c'est

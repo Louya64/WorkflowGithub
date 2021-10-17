@@ -8,6 +8,7 @@ a {
 	color: $colorLinks;
 	text-decoration: none;
 	font-size: bold;
+	background-color: inherit;
 }
 a:hover {
 	text-decoration: underline;
@@ -33,7 +34,6 @@ h6 {
 }
 
 main {
-	width: 70%;
 	margin: auto;
 	font-size: 1vw;
 }
@@ -88,8 +88,10 @@ main {
 .bash {
 	color: $colorBash;
 	font-weight: bold;
+	background-color: inherit;
 }
 
 .comment {
 	color: $colorComments;
+	background-color: inherit;
 }
