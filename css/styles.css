@@ -135,9 +135,14 @@ main {
   padding: 3vh;
 }
 
+.list {
+  width: 80%;
+  margin: auto;
+}
+
 .list__item {
   padding: 2vh 5vw;
-  margin: 0 5vw;
+  margin: 2vh 5vw;
   list-style-type: decimal-leading-zero;
 }
 

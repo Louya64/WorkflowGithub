@@ -4,9 +4,11 @@
 	padding: 3vh;
 }
 .list {
+	width: 80%;
+	margin: auto;
 	&__item {
 		padding: 2vh 5vw;
-		margin: 0 5vw;
+		margin: 2vh 5vw;
 		list-style-type: decimal-leading-zero;
 		&--light {
 			background-color: lighten($colorSecond, 10);
